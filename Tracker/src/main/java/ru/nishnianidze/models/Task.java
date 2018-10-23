@@ -7,7 +7,8 @@ public class Task extends Item {
 
 }
       public String calculatePrice() {
-           return "100%";
+
+       return "100%";
 }
       
 }
