@@ -8,10 +8,12 @@ public class Profi {
 
     public static void main(String[] args) {
         Profi profi = new Profi();
+
         profi.profession[0] = new Profession("Jango", "Doctor", "Hundred$");
-        profi.profession[1] = new Engineer("James", "Engineer", "FiveHundred$");
-        profi.profession[2] = new Doctor("Richard", "Doctor", "Thousend$");
-        profi.profession[3] = new Teacher("Katya", "Teacher", "TwoThousend$", "Chemistry");
+        profi.profession[1] =  new Engineer("13");
+        profi.profession[2] = new Doctor("nurofen", "snuffle");
+        profi.profession[3] = new Teacher("mathematic");
+
 
         for (Profession profess : profi.profession) {
             if (profess instanceof Teacher) {
@@ -21,7 +23,7 @@ public class Profi {
             }
 
 
-            System.out.println(profess.getName() + " " + profess.getProfession());
+            System.out.println(profess.getName() + " " + profess.getProfession() + " " + profess.getSalary());
 
         }
     }

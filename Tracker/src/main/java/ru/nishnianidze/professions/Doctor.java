@@ -5,17 +5,16 @@ public class Doctor extends Profession {
     public String diagnose;
     public String medicament;
 
-    public Doctor (String name, String professionn, String salary, String medicament, String diagnose) {
-        this.name = name;
-        this.professionn = professionn;
+    public Doctor (String medicament, String diagnose) {
+
         this.medicament = medicament;
         this.diagnose = diagnose;
-        this.salary = salary;
+        }
 
+    Doctor (String name, String professionn, String salary) {
+        super ( name,professionn, salary);
     }
 
-    public Doctor(String richard, String doctor, String thousend$) {
-    }
 
     public String getDiagnose(){
             return this.diagnose;

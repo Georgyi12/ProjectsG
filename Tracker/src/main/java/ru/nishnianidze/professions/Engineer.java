@@ -2,24 +2,21 @@ package ru.nishnianidze.professions;
 
 public class Engineer extends Profession {
 
-        public String branchOfEngeneering;
+         public String howLong;
 
-        public Engineer (String name, String professionn, String salary, String branchOfEngeneering) {
+         public Engineer(String howLong){
+             this.howLong = howLong;
+         }
 
-            this.name = name;
-            this.professionn = professionn;
-            this.salary = salary;
-            this.branchOfEngeneering = branchOfEngeneering;
+         Engineer (String name, String professionn, String salary) {
+            super ( name,professionn, salary);
+            }
+
+            public String howLong(){
+
+             return howLong;
+            }
+
+
         }
 
-    public  Engineer(String james, String engineer, String fiveHundred$) {
-    }
-
-
-    public String getBranchOfEngeneering()
-    {
-
-        return branchOfEngeneering;
-        }
-
-    }
