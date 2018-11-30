@@ -1,3 +1,4 @@
+
 package ru.nishnianidze.professions;
 
 public class Profession{

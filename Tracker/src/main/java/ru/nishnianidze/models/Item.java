@@ -2,6 +2,7 @@ package ru.nishnianidze.models;
 
 public class Item {
     private String id;
+
     public String name;
 
     public String description;
@@ -37,6 +38,7 @@ public class Item {
 
     }
     public void setId(String id){
+
         this.id = id;
     }
 
